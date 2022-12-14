@@ -1,0 +1,81 @@
+.checkbox-filter {
+	list-style: none;
+	&__item {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		height: 52px;
+
+		/* light yellow */
+		background: #fffce3;
+
+		/* black */
+		border-width: 0px 1px 1px 0px;
+		border-style: solid;
+		border-color: #000000;
+
+		label {
+			font-family: "IBM Plex Mono";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 23px;
+			color: #000000;
+		}
+
+		.custom-checkbox {
+			// Тут мы просто центрируем чекбокс и текст
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+			padding: 0 19px;
+
+			.checkbox {
+				margin-right: 3px;
+				position: relative;
+				width: 24px;
+				height: 24px;
+				border: 2px solid #000000;
+				background: #ffffff;
+				filter: drop-shadow(2px 2px 0px #000000);
+
+				&:hover {
+					filter: none;
+					transform: translate(1px, 1px);
+				}
+			}
+
+			input {
+				// Скрываем оригинальный чекбокс
+				-webkit-appearance: none;
+				position: absolute;
+
+				&:checked ~ .checkbox .checkmark {
+					display: block; // Показываем иконку, когда чекбокс активен
+				}
+
+				&:checked ~ .checkbox {
+					background: #67e4ff;
+					border: 2px solid #000000;
+				}
+			}
+
+			.checkmark {
+				// Тут центритуем и пишем стили для иконки
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 80%;
+				height: auto;
+				display: none; // Скрываем иконку
+			}
+		}
+	}
+}
+
+.checkbox-filter__item {
+}

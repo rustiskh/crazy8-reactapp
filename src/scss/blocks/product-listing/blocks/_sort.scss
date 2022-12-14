@@ -1,0 +1,68 @@
+.sort {
+	display: flex;
+	position: relative;
+
+	&__label {
+		display: flex;
+		align-items: center;
+
+		span {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+		p,
+		span {
+			font-family: "IBM Plex Mono";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 23px;
+
+			/* black */
+			color: #000000;
+			margin-right: 8px;
+		}
+	}
+
+	&__popup {
+		position: absolute;
+		right: 0;
+		top: 38px;
+		width: 186px;
+		background: #fffce3;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #000000;
+		border-radius: 0px;
+		z-index: 999;
+
+		ul {
+			overflow: hidden;
+			li {
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				height: 38px;
+				padding: 10px 15px;
+				background: #fffce3;
+				border-width: 0px 1px 1px 0px;
+				border-style: solid;
+				border-color: #000000;
+
+				font-family: "IBM Plex Mono";
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 18px;
+
+				/* black */
+				color: #000000;
+
+				&:hover {
+					background-color: #ffca29;
+				}
+			}
+		}
+	}
+}

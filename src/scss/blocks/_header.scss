@@ -1,0 +1,68 @@
+.header {
+	background: #ffca29;
+	height: 108px;
+	position: relative;
+
+	.container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__nav {
+		display: flex;
+	}
+
+	&__elements-wrapper {
+		display: flex;
+		column-gap: 40px;
+		// margin: auto 0 auto auto;
+	}
+
+	&__logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__nav {
+		display: flex;
+		gap: 40px;
+		list-style: none;
+
+		&-link {
+			text-decoration: none;
+			font-family: "IBM Plex Mono";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 23px;
+			color: #000000;
+
+			&:hover {
+				color: #ff31b5;
+			}
+		}
+	}
+}
+
+.header-control {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+
+	&__icon {
+		cursor: pointer;
+	}
+
+	&__title {
+		font-family: "IBM Plex Mono";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 23px;
+		color: #000000;
+	}
+}

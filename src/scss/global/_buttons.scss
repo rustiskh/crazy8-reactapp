@@ -1,0 +1,38 @@
+.button {
+	display: inline-block;
+	font-family: "IBM Plex Mono";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 23px;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+
+	padding: 10px 30px;
+
+	border: 2px solid #000000;
+	box-shadow: 3px 3px 0px #191919;
+	border-radius: 4px;
+
+	&_normal {
+		background: #9204d2;
+	}
+
+	&:hover {
+		background: #ff31b5;
+		box-shadow: none;
+		transform: translate(2px, 2px);
+	}
+
+	&:active {
+		background: #4eff9f;
+		color: #000000;
+	}
+
+	&:disabled {
+		background: #7ec7d7;
+		box-shadow: none;
+		transform: none;
+	}
+}

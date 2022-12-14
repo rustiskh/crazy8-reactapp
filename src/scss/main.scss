@@ -1,0 +1,32 @@
+@import "global/icon";
+@import "global/buttons";
+@import "global/typography";
+@import "global/breadcrump";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/mail-form";
+@import "blocks/product-card";
+@import "blocks/product-listing/product-listing";
+@import "blocks/product-listing/blocks/catalog-filter";
+@import "blocks/product-listing/blocks/range-slider";
+@import "blocks/product-listing/blocks/checkbox-filter";
+@import "blocks/product-listing/blocks/sort";
+@import "blocks/product-listing/blocks/listing-pagination";
+@import "blocks/cart-page/cart";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background: #67e4ff;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1218px;
+	margin: 0 auto;
+}

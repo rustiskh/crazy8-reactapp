@@ -1,0 +1,104 @@
+.mail-form {
+	margin-top: 100px;
+	height: 373px;
+
+	.container {
+		position: relative;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&_yellow {
+		background-color: #ffca29;
+	}
+
+	&_velvet {
+		background-color: #ff31b5;
+	}
+
+	&__elements-wrapper {
+	}
+
+	&__img-wrapper {
+		position: absolute;
+		top: -66px;
+		right: -242px;
+	}
+
+	&__elements-wrapper {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+	}
+
+	&__title {
+		display: inline-block;
+		padding: 10px 20px;
+		background: #67e4ff;
+		width: fit-content;
+
+		span {
+			font-family: "IBM Plex Mono";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 52px;
+			text-transform: uppercase;
+			color: #000000;
+		}
+	}
+
+	&__description {
+		display: inline-block;
+		padding: 10px 20px;
+		background: #ffffff;
+		width: fit-content;
+
+		span {
+			font-family: "IBM Plex Mono";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 23px;
+			color: #000000;
+		}
+	}
+
+	&__controls {
+		display: flex;
+		align-items: center;
+		column-gap: 8px;
+	}
+
+	&__input {
+		font-family: "IBM Plex Mono";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 23px;
+
+		/* white */
+		color: #000000;
+		background: none;
+		border: none;
+		border-bottom: 4px solid #ffffff;
+
+		&::placeholder {
+			color: #ffffff;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__button {
+		height: 42px;
+		width: 42px;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,23 @@
+.icon-shadow {
+	&.icon-48px {
+		svg {
+			filter: drop-shadow(4px 4px 0px #000000);
+
+			&:hover {
+				filter: none;
+				transform: translate(2px, 2px);
+			}
+		}
+	}
+
+	&.icon-32px {
+		svg {
+			filter: drop-shadow(2px 2px 0px #000000);
+
+			&:hover {
+				filter: none;
+				transform: translate(1px, 1px);
+			}
+		}
+	}
+}
