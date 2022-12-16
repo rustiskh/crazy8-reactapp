@@ -1,7 +1,10 @@
 .breadcrump {
 	list-style: none;
 	display: flex;
-	margin-top: 40px;
+
+	&.container {
+		margin-top: 40px;
+	}
 
 	&__item {
 		&:not(:last-child) {
