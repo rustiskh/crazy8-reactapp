@@ -11,6 +11,7 @@ import Catalog from './pages/Catalog';
 import NotFound from './pages/NotFound';
 
 import { Route, Routes } from 'react-router-dom';
+import Cart from './pages/Cart';
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Catalog />} />
         <Route path='*' element={<NotFound />} />
+        <Route path='cart' element={<Cart />} />
       </Routes>
 
       <MailForm />

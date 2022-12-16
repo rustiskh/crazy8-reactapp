@@ -2,16 +2,17 @@ import React from "react";
 
 function CatalogProductCard({title, price, images}) {
 
-    const [img, setImg] = React.useState();
+    // Отображение избражений из локального хранилища с ссылками из локального json файла
+    // const [img, setImg] = React.useState();
 
-    React.useEffect( () => {
-        const getImgCatalog = async () => {
-            const data = await import(`../../assets/img/products/${images[0]}`);
-            setImg(data.default);
-        }
+    // React.useEffect( () => {
+    //     const getImgCatalog = async () => {
+    //         const data = await import(`../../assets/img/products/${images[0]}`);
+    //         setImg(data.default);
+    //     }
         
-        getImgCatalog();
-    }, [images]);
+    //     getImgCatalog();
+    // }, [images]);
 
     const [itemCount, setItemCount] = React.useState(0);
 
@@ -28,7 +29,7 @@ function CatalogProductCard({title, price, images}) {
     return (
             <div className="product-card">
                 <div className="product-card__img-wrapper">
-                  <img src={img} alt={title} className="product-card__img" />
+                  <img src={images[0]} alt={title} className="product-card__img" />
                 </div>
                 <div className="product-card__info-wrapper">
                   <a href={title.replaceAll(' ', '-').toLowerCase()} className="product-card__title">{title.slice(0, 30) + `...`}</a>
