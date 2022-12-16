@@ -1,3 +1,5 @@
+import React from 'react'
+
 function FilterPrice() {
     return (
         <div id="filter-price" data-filter-type="slider" className="catalog-filter catalog-filter_opened">

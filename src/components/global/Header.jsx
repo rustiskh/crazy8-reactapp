@@ -32,7 +32,7 @@ function Header () {
                 </svg>
               </div>
             </div>
-            <div id="cart" className="header-control">
+            <Link to="/cart" id="cart" className="header-control">
               <span className="header-control__title">cart (0)</span>
               <div className="header-control__icon icon-shadow icon-48px">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@ function Header () {
                   <path fillRule="evenodd" clipRule="evenodd" d="M15.7891 21.8943L19.7891 13.8943L16.2114 12.1055L12.2114 20.1055L15.7891 21.8943Z" fill="black" />
                 </svg>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </header>
