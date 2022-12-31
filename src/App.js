@@ -13,25 +13,28 @@ import NotFound from './pages/NotFound';
 import { Route, Routes } from 'react-router-dom';
 import Cart from './pages/Cart';
 
-
-
-
-
+// Глобальная переменная поиска
+export const SearchContext = React.createContext('');
 
 
 function App() {
+  // Стейт поля поиска
+  const [searchValue, setSearchValue] = React.useState('');
+
+
   return (
     <div className="App">
-      <Header />
-      <Breadcrumps />
-      <Routes>
-        <Route path='/' element={<Catalog />} />
-        <Route path='*' element={<NotFound />} />
-        <Route path='cart' element={<Cart />} />
-      </Routes>
-
-      <MailForm />
-      <Footer />
+      <SearchContext.Provider value={{ searchValue, setSearchValue }}>
+        <Header />
+        <Breadcrumps />
+        <Routes>
+          <Route path='/' element={<Catalog />} />
+          <Route path='*' element={<NotFound />} />
+          <Route path='cart' element={<Cart />} />
+        </Routes>
+        <MailForm />
+        <Footer />
+      </SearchContext.Provider>
     </div>
   );
 }

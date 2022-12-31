@@ -53,6 +53,14 @@
 	column-gap: 20px;
 	text-decoration: none;
 
+	&__search-wrapper {
+		display: flex;
+		align-items: center;
+		width: 145px;
+		position: relative;
+		overflow: hidden;
+	}
+
 	&__icon {
 		cursor: pointer;
 	}
@@ -64,5 +72,56 @@
 		font-size: 18px;
 		line-height: 23px;
 		color: #000000;
+		position: relative;
+	}
+}
+
+#search-header.header-control {
+	position: relative;
+	transition: all 0.6s ease-in-out;
+
+	.header-control__title {
+		position: relative;
+		right: -80px;
+		transition: all 0.6s ease-in-out;
+	}
+
+	.header-control__search-input {
+		font-family: "IBM Plex Mono";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 23px;
+
+		width: 145px;
+		color: #000000;
+		background: none;
+		border: none;
+		border-bottom: 4px solid #000000;
+		margin-left: 10px;
+		position: relative;
+		right: -80px;
+		transition: all 0.6s ease-in-out;
+
+		&::placeholder {
+			color: #ffffff;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&.active {
+		transition: all 0.6s ease-in-out;
+		.header-control__title {
+			transition: all 0.6s ease-in-out;
+			right: 80px;
+		}
+
+		.header-control__search-input {
+			transition: all 0.6s ease-in-out;
+			right: 72px;
+		}
 	}
 }

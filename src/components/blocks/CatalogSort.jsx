@@ -1,20 +1,37 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { setSort } from '../../redux/slices/filterSlice';
 
 function CatalogSort() {
-    const [open, setOpen] = React.useState(false);
-    const [selected, setSelected] = React.useState(0);
-    const list = ['Price: Low to high','Price: High to low']
+    // Sorting with Redux-toolkit
+  const dispatch = useDispatch();
+  const sort = useSelector(state => state.sortFilter)
+  const [open, setOpen] = React.useState(false);
+  
 
-    const onClickListItem = (i) => {
-        setSelected(i);
-        setOpen(false);
+    // const [open, setOpen] = React.useState(false);
+    // const [selected, setSelected] = React.useState(0);
+    const list = [
+      {
+        name: 'Price: Low to high',
+        sortProperty: 'price&order=asc'
+      },
+      {
+        name:'Price: High to low',
+        sortProperty: 'price&order=desc'
       }
+    ]
+
+    const onClickListItem = (obj) => {
+      dispatch(setSort(obj))
+      setOpen(false);
+    }
 
     return (
         <div className="sort">
                 <div className="sort__label">
                   <p>Sort by:</p>
-                  <span onClick={() => setOpen(!open)}> {list[selected]} </span>
+                  <span onClick={() => setOpen(!open)}> {sort.sortFilter.name} </span>
                   <div onClick={() =>setOpen(!open)} className="sort__icon icon-shadow icon-32px">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.33301 3.33301H25.9997V25.9997H3.33301V3.33301Z" fill="#4EFF9F" />
@@ -32,11 +49,11 @@ function CatalogSort() {
                 (<div className="sort__popup">
                   <ul>
                     {
-                        list.map((name, i) => (
-                            <li key={name} 
-                            onClick={() => onClickListItem(i)}
-                            className={selected === i ? "active" : ""}>
-                                {name}
+                        list.map((obj) => (
+                            <li key={obj.name} 
+                            onClick={() => onClickListItem(obj)}
+                            className={sort.sortProperty === obj.sortProperty ? "active" : ""}>
+                                {obj.name}
                             </li>
                         ))
                     }
