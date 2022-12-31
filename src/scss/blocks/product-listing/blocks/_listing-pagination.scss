@@ -3,6 +3,40 @@
 		list-style: none;
 		display: flex;
 		column-gap: 15px;
+
+		.break {
+			width: 48px;
+			height: 48px;
+			background: #fffce3;
+
+			border: 2px solid #000000;
+
+			box-shadow: 4px 4px 0px #000000;
+			border-radius: 2px;
+			cursor: pointer;
+
+			&:hover {
+				box-shadow: none;
+				transform: translate(2px, 2px);
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+
+				font-family: "IBM Plex Mono";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 23px;
+				color: #000000;
+
+				text-decoration: none;
+			}
+		}
 	}
 
 	&__item {
@@ -14,10 +48,21 @@
 
 		box-shadow: 4px 4px 0px #000000;
 		border-radius: 2px;
+		cursor: pointer;
 
 		&:hover {
 			box-shadow: none;
 			transform: translate(2px, 2px);
+		}
+
+		&.selected {
+			background: #4eff9f;
+			box-shadow: none;
+			transform: translate(2px, 2px);
+		}
+
+		&-icon {
+			cursor: pointer;
 		}
 	}
 
