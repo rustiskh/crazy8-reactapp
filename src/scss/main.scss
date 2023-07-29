@@ -5,7 +5,8 @@
 @import "blocks/header";
 @import "blocks/footer";
 @import "blocks/mail-form";
-@import "blocks/product-card";
+@import "blocks/product-card/product-card";
+@import "blocks/product-card/product-card-select";
 @import "blocks/product-listing/product-listing";
 @import "blocks/product-listing/blocks/catalog-filter";
 @import "blocks/product-listing/blocks/range-slider";

@@ -1,0 +1,17 @@
+; Фейковая база данных. Т.к. mockapi не умеет во множественную фильтрацию. А также для сбора и хранения данных с форм
+https://www.npmjs.com/package/json-server
+
+Start JSON Server (3000 по умолчанию)
+npx json-server db.json
+json-server --watch db.json
+
+Затем запускаем приложение реакта
+
+
+Alternative port
+You can start JSON Server on other ports with the --port flag:
+json-server --watch db.json --port ****
+
+
+
+
