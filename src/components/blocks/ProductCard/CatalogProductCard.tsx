@@ -44,6 +44,7 @@ const CatalogProductCard: React.FC<CatalogProductCardProps> = ({ SKU, title, pri
 	const dispatch = useDispatch();
 	const cartItem = useSelector(selectorCartItemBySKU(SKU));
 	const addedCount: number = cartItem ? cartItem.count : 0;
+
 	const onClickAdd = () => {
 		if (itemCount <= 0) {
 			// Проверка на корректность количества перед добавлением в корзину
@@ -59,6 +60,7 @@ const CatalogProductCard: React.FC<CatalogProductCardProps> = ({ SKU, title, pri
 			colors: selectedColor && selectedColor.value,
 			count: itemCount, // Используем значение itemCount из состояния компонента
 		};
+
 		dispatch(addItem(item));
 	};
 
