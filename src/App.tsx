@@ -9,17 +9,19 @@ import Catalog from "./pages/Catalog";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Cart from "./pages/Cart";
-import MainLanding from "./pages/MainLanding";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
+	const { pathname } = useLocation();
+
 	return (
 		<div className="App">
 			<Header />
-			<Breadcrumps />
+			{pathname !== "/" && <Breadcrumps />}
 			<Routes>
-				<Route path="/" element={<MainLanding />} />
+				<Route path="/" element={<LandingPage />} />
 				<Route path="/catalog" element={<Catalog />} />
 				<Route path="*" element={<NotFound />} />
 				<Route path="cart" element={<Cart />} />
