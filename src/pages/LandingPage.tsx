@@ -1,7 +1,9 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import heroImg from "../assets/img/landing-page/hero-sneaker-img.png";
+import reviewBg from "../assets/img/landing-page/reviews-bg.png";
 import axios from "axios";
+import ReviewsCarousel from "../components/blocks/ReviewsCarousel/ReviewsCarousel";
 
 type GalleryProduct = {
 	title: string;
@@ -74,6 +76,15 @@ const LandingPage: React.FC = () => {
 							VIEW ALL
 						</Link>
 					</div>
+				</div>
+			</section>
+			<section className="review">
+				<div className="review-bg">
+					<img src={reviewBg} alt="" className="review-bg__image" />
+				</div>
+				<div className="review-wrapper container">
+					<h2 className="review__title h1_inner-pages">Our store reviews</h2>
+					<ReviewsCarousel />
 				</div>
 			</section>
 		</>
