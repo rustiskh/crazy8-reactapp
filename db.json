@@ -638,5 +638,52 @@
       "colors": ["https://blob.sxv.pl/shops/media/wbthumb/2021/nike/197622/nike-air-force-1-mid-nh-dr0158-100-627906b939a21.jpg", "https://blob.sxv.pl/shops/media/wbthumb/2021/nike/191879/nike-air-force-1-mid-do7045-600-62b2c9d0d2863.jpg", "https://blob.sxv.pl/shops/media/wbthumb/2022/nike/202967/nike-air-force-1-mid-nh-2-dr0296-200-627cbc007a085.jpg", "https://blob.sxv.pl/shops/media/wbthumb/2022/nike/204236/nike-air-force-1-mid-qs-dm0107-200-62a867b60f14c.jpg", "https://blob.sxv.pl/shops/media/wbthumb/2022/nike/204237/nike-air-force-1-mid-qs-dm0107-500-62fcb951aa4b6.jpg"]
     }
    ],
+   "reviews": [
+    {
+      "name": "Mary Johnson",
+      "text": "These sneakers are an absolute game-changer! After tirelessly searching for high-quality, ultra-comfortable footwear to ease my sore feet, I finally struck gold with this amazing find. The design is sleek and trendy, and the price is surprisingly affordable. I couldn't be happier with my purchase, and I highly recommend these sneakers to anyone in need of comfort and style.",
+      "avatar": "../img/reviews/review-avatar-01.png"
+    },
+    {
+      "name": "David Parker",
+      "text": "I can't stop raving about these incredible sneakers! From the moment I slipped them on, I knew I had discovered the perfect fit. They offer unparalleled comfort, ensuring my feet stay happy all day long. Even during intense workouts, these shoes provide excellent support and prevent any chafing. Plus, their sleek and modern design garners compliments wherever I go. Undoubtedly worth every penny.",
+      "avatar": "../img/reviews/review-avatar-02.png"
+    },
+    {
+      "name": "Emily Williams",
+      "text": "My feet are singing praises for these sneakers! My relentless quest for the ideal pair has finally ended. The comfort level is off the charts, making walking a breeze, and even long hours on my feet are now a pleasure. The added bonus is their ability to repel water, keeping my feet dry during unexpected downpours. With their stylish look and fantastic price, I am thoroughly impressed.",
+      "avatar": "../img/reviews/review-avatar-03.png"
+    },
+    {
+      "name": "Michael Turner",
+      "text": "These sneakers exceeded all my expectations! Searching for footwear that is both fashionable and practical can be challenging, but these shoes tick all the boxes. The moment I tried them on, I felt like I was walking on clouds. The top-notch materials ensure they are durable and long-lasting, making them a worthy investment. I've received countless compliments, and I'm thrilled with my purchase.",
+      "avatar": "../img/reviews/review-avatar-04.png"
+    },
+    {
+      "name": "Olivia Mitchell",
+      "text": "I'm head over heels in love with these sneakers! They have become my go-to choice for any activity, be it a leisurely stroll or a demanding workout. The level of comfort they provide is unmatched, and they fit my feet like a glove. Not only do they keep my feet dry on rainy days, but their sleek and stylish design elevates any outfit. Truly a gem of a find.",
+      "avatar": "../img/reviews/review-avatar-05.png"
+    },
+    {
+      "name": "Benjamin Scott",
+      "text": "These sneakers are worth their weight in gold! It's rare to come across such a perfect combination of style, comfort, and affordability. I can now bid farewell to sore feet and blisters, as these shoes cradle my feet with care. The attention to detail in their design is evident, and I couldn't be happier with my purchase. If you're on the hunt for exceptional sneakers, look no further.",
+      "avatar": "../img/reviews/review-avatar-06.png"
+    },
+    {
+      "name": "Grace Anderson",
+      "text": "I'm utterly thrilled with these remarkable sneakers! The level of comfort they provide is unmatched, making them ideal for long days on my feet. Their excellent arch support alleviates any discomfort, and they remain cozy even after hours of wear. The attractive design complements various outfits, and the best part is their budget-friendly price. I'll be recommending these to all my friends.",
+      "avatar": "../img/reviews/review-avatar-07.png"
+    },
+    {
+      "name": "Daniel White",
+      "text": "These sneakers have revolutionized my footwear game! My feet have never felt this pampered and supported before. They stay dry and blister-free, and I can confidently wear them in any weather. Their modern design adds a touch of elegance to my attire, and I appreciate the affordable price point. This purchase has been a game-changer for me, and I can't imagine going back to other sneakers.",
+      "avatar": "../img/reviews/review-avatar-08.png"
+    },
+    {
+      "name": "Sophia Carter",
+      "text": "I can't sing enough praises for these incredible sneakers! The moment I slipped them on, I knew I had struck gold. They provide the perfect balance of comfort and style, making them my go-to choice for every occasion. The superior quality ensures they'll accompany me on countless adventures without losing their charm. I'm thrilled with this purchase, and I highly recommend them to everyone!",
+      "avatar": "../img/reviews/review-avatar-09.png"
+    }
+   ],
    "requests": []
 }

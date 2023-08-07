@@ -220,3 +220,145 @@
 		justify-content: center;
 	}
 }
+
+.review {
+	margin-top: 150px;
+	position: relative;
+
+	&-wrapper {
+		position: relative;
+	}
+
+	&-bg {
+		height: 700px;
+		width: 100vw;
+		position: absolute;
+		top: -82px;
+		left: -21px;
+		z-index: -1;
+		background-color: #ffca29;
+		transform: rotate(-3deg);
+
+		&__image {
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+		}
+	}
+
+	&-swiper {
+		margin-top: 20px;
+		padding: 0 4px 4px 4px !important;
+		overflow: visible !important;
+		min-height: 420px;
+
+		.swiper-pagination {
+			bottom: -32px !important;
+
+			&-bullet {
+				width: 16px;
+				height: 16px;
+				border-radius: 4px;
+				background-color: #fffce3;
+				opacity: 1;
+
+				&-active {
+					background-color: #000;
+				}
+			}
+		}
+
+		&__navigate {
+			position: absolute;
+			top: -62px;
+			right: 0px;
+			display: flex;
+			column-gap: 18px;
+		}
+
+		&__arrow {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			background-color: #9204d2;
+			border: 2px solid #000;
+			filter: drop-shadow(2px 2px 0px #000000);
+			cursor: pointer;
+
+			&:hover {
+				filter: none;
+				transform: translate(2px, 2px);
+				background-color: #ff31b5;
+			}
+		}
+	}
+
+	&-card {
+		border: 2px solid #000000;
+		box-shadow: 3px 3px 0px #191919;
+		border-radius: 4px;
+		padding: 20px;
+		background-color: #fffce3;
+
+		cursor: pointer;
+
+		&__text {
+			&-wrapper {
+				margin-bottom: 40px;
+			}
+
+			&-content {
+				color: #000;
+				font-family: IBM Plex Mono;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 140%;
+			}
+		}
+
+		&__author {
+			&-wrapper {
+				display: flex;
+				align-items: center;
+				justify-content: end;
+			}
+
+			&-avatar {
+				margin-right: 10px;
+				width: 64px;
+				height: 64px;
+				border-radius: 100%;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			&-name {
+				color: #000;
+				font-family: IBM Plex Mono;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 140%;
+			}
+		}
+
+		&.swiper-slide-active {
+			box-shadow: none;
+		}
+
+		// &.swiper-slide-prev {
+		// 	width: 282px !important;
+		// }
+
+		// &.swiper-slide-next {
+		// 	width: 386px !important;
+		// }
+	}
+}

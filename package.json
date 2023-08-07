@@ -23,6 +23,7 @@
     "react-scripts": "5.0.1",
     "react-select": "^5.7.0",
     "sass": "^1.56.2",
+    "swiper": "^10.1.0",
     "typescript": "^5.1.6",
     "web-vitals": "^2.1.4"
   },
